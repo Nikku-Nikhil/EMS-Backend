@@ -259,6 +259,10 @@ app.get("/downloadStudents", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.status(200).send("Landing Page");
+});
+
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at 127.0.0.1:${port}`);
 });
