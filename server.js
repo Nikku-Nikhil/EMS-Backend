@@ -197,17 +197,76 @@ app.get("/scanQrCode", async (req, res) => {
     });
 
     if (!student) {
-      return res.status(404).send("Student not found");
+      return res.status(404).send(`
+       <html>
+      <head>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            text: center;
+           -top: 50px;
+          }
+          .message {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="message">Student not Found</div>
+      </body>
+    </html>`);
     }
 
-    if (student.isApproved) {
-      return res.status(400).send("QR code already scanned");
+     if (student.isApproved) {
+      return res.status(400).send(`
+    <html>
+      <head>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            text: center;
+           -top: 50px;
+          }
+          .message {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="message">QR code already scanned</div>
+      </body>
+    </html>
+  `);
     }
 
     student.isApproved = true;
     await student.save();
 
-    res.send("QR code scanned successfully");
+    res.send(`
+  <html>
+    <head>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+        .message {
+          color: green;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="message">QR code scanned successfully</div>
+    </body>
+  </html>
+`);
   } catch (error) {
     console.error("Error scanning QR code:", error);
     res.status(500).send("Internal Server Error");
