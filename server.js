@@ -208,7 +208,7 @@ app.get("/scanQrCode", async (req, res) => {
           }
           .message {
             color: red;
-             font-size: 10rem;
+             font-size: 8rem;
             font-weight: bold;
           }
         </style>
@@ -231,7 +231,7 @@ app.get("/scanQrCode", async (req, res) => {
           }
           .message {
             color: red;
-            font-size: 10rem;
+            font-size: 8rem;
             font-weight: bold;
           }
         </style>
@@ -257,7 +257,7 @@ app.get("/scanQrCode", async (req, res) => {
         }
         .message {
           color: green;
-          font-size: 10rem;
+          font-size: 8rem;
           font-weight: bold;
         }
       </style>
