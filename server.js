@@ -75,7 +75,7 @@ const processStudent = async (student) => {
 
 Please find your QR code attached below.<br><br>
 
-<strong>Note: Do not scan the QR code by yourself, as it is for one-time use.</strong><br><br>
+<strong>Note: Do not scan this QR code by yourself, as it is for one-time use.</strong><br><br>
 
 Thank you.`,
       attachments: [
