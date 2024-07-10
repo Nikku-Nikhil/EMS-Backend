@@ -71,7 +71,13 @@ const processStudent = async (student) => {
       from: process.env.EMAIL_USER,
       to: email,
       subject: "Your QR Code",
-      text: "Please find your QR code attached.",
+      html: `Hi ${name},<br><br>
+
+Please find your QR code attached below.<br><br>
+
+<strong>Note: Do not scan the QR code by yourself, as it is for one-time use.</strong><br><br>
+
+Thank you.`,
       attachments: [
         {
           filename: "qrcode.png",
