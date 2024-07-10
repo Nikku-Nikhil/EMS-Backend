@@ -204,11 +204,11 @@ app.get("/scanQrCode", async (req, res) => {
           body {
             font-family: Arial, sans-serif;
             text: center;
-           -top: 50px;
+            margin-top: 50px;
           }
           .message {
             color: red;
-            font-size: 24px;
+             font-size: 12rem;
             font-weight: bold;
           }
         </style>
@@ -227,11 +227,11 @@ app.get("/scanQrCode", async (req, res) => {
           body {
             font-family: Arial, sans-serif;
             text: center;
-           -top: 50px;
+            margin-top: 50px;
           }
           .message {
             color: red;
-            font-size: 24px;
+            font-size: 12rem;
             font-weight: bold;
           }
         </style>
@@ -257,7 +257,7 @@ app.get("/scanQrCode", async (req, res) => {
         }
         .message {
           color: green;
-          font-size: 24px;
+          font-size: 12rem;
           font-weight: bold;
         }
       </style>
