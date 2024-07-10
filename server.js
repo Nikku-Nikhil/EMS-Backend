@@ -203,12 +203,14 @@ app.get("/scanQrCode", async (req, res) => {
         <style>
           body {
             font-family: Arial, sans-serif;
-           text-align: center;
-            margin-top: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
           .message {
             color: red;
-             font-size: 8rem;
+             font-size: 6rem;
             font-weight: bold;
           }
         </style>
@@ -225,13 +227,15 @@ app.get("/scanQrCode", async (req, res) => {
       <head>
         <style>
           body {
-            font-family: Arial, sans-serif;
-             text-align: center;
-            margin-top: 50px;
+              font-family: Arial, sans-serif;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
           }
           .message {
             color: red;
-            font-size: 8rem;
+            font-size: 6rem;
             font-weight: bold;
           }
         </style>
@@ -253,11 +257,13 @@ app.get("/scanQrCode", async (req, res) => {
         body {
           font-family: Arial, sans-serif;
           text-align: center;
-          margin-top: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .message {
           color: green;
-          font-size: 8rem;
+          font-size: 6rem;
           font-weight: bold;
         }
       </style>
