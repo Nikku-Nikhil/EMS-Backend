@@ -203,7 +203,7 @@ app.get("/scanQrCode", async (req, res) => {
         <style>
           body {
             font-family: Arial, sans-serif;
-            text: center;
+           text-align: center;
             margin-top: 50px;
           }
           .message {
@@ -226,7 +226,7 @@ app.get("/scanQrCode", async (req, res) => {
         <style>
           body {
             font-family: Arial, sans-serif;
-            text: center;
+             text-align: center;
             margin-top: 50px;
           }
           .message {
